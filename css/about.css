@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.about p {
+  color: #FFF;
+}
+
+/* フッター */
+footer {
+  color: #FFF;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+/*# sourceMappingURL=about.css.map */

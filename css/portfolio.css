@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* 1200 and up */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* vanta.js */
+#vanta-canvas {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Portfolioのリンク部分 */
+.nav-links a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.nav-links a:hover {
+  color: #486696;
+  /* リンクにホバーすると、青になる */
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  /* リンクにホバーする時の速度 */
+}
+
+/* フッター */
+footer {
+  color: #FFF;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* small phones landscape 576 - 768 */
+/* tablets 768 - 992 */
+/* laptop 992 - 1200 */
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,99 @@
+$font-primary: #FFF;
+$btn-primary: #3FBBFF;
+$btn-secondary: #FFF;
+
+/* desktop 1200 and up */
+.nav-menu {
+  display: grid;
+  /* grid-template-columns: repeat(3, auto); */ /* メニューを横にする */
+  list-style: none; /* リスト ● をはずす */
+  text-align: center; /* 1 grid内で中央寄せ */
+  /* width: 40%; */ /* 1 grid内の幅 */
+  justify-self: end; /* メニューを右寄せ */
+}
+
+/* コンテンツ*/
+.main {
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  z-index: 2;
+  top: 17%;
+  left: 5%;
+}
+
+.sub-name {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* button */
+button {
+  background-color: transparent;
+  border: none;
+  color: $btn-secondary;
+  border: 2px solid $btn-primary;
+  padding: 18px 36px;
+  display: inline-block;
+  cursor: pointer;
+  transition: ease-out 0.6s;
+  &:hover {
+    box-shadow: inset 400px 0 0 0 $btn-primary;
+    opacity: 0.7;
+  }
+  a {
+    text-decoration: none;
+    color: $btn-secondary;
+    font-size: 20px;
+  }
+}
+
+footer {
+  color: $font-primary;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* phones */
+@media screen and (max-width: 576px) {
+  /* 0 - 576 */
+  .main {
+    position: absolute;
+    top: 22%;
+    z-index: 1;
+    font-size: 50px;
+  }
+
+  .sub-name {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* small phones landscape 576 - 768 */
+@media screen and (max-width: 768px) {
+  .main {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/* tablets 768 - 992 */
+@media screen and (max-width: 992px) {
+  .main {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+/* laptop 992 - 1200 */
+@media screen and (max-width: 1200px) {
+}
+
+/* 1200 and up is begining of this code */
